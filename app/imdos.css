@@ -1,0 +1,28 @@
+.no-scrollbar::-webkit-scrollbar {
+  /* Chrome, Safari, Edge, Opera */
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.text-destructive {
+  color: rgb(255, 73, 73);
+}
+
+.border-destructive {
+  border-color: rgb(255, 73, 73);
+}
+
+.bg-destructive {
+  background-color: rgb(255, 73, 73);
+}
