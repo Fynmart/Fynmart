@@ -124,9 +124,9 @@ const ShippingLabelReceipt = ({ cartItem }) => {
                   <tr key={index}>
                     <td>{item.title}</td>
                     <td className="text-right">{item.quantity}</td>
-                    <td className="text-right">${item.price}</td>
+                    <td className="text-right">₹{item.price}</td>
                     <td className="text-right">
-                      ${item.price * item.quantity}
+                      ₹{item.price * item.quantity}
                     </td>
                   </tr>
                 ))}
@@ -134,7 +134,7 @@ const ShippingLabelReceipt = ({ cartItem }) => {
             </table>
             <div className="text-right">
               <p>
-                <strong>Total: ${calculateTotal()}</strong>
+                <strong>Total: ₹{calculateTotal()}</strong>
               </p>
             </div>
             <h1 className="mt-3">
@@ -255,19 +255,24 @@ const Product = () => {
       header: "User Name",
       cell: ({ row }) => <div>{row.getValue("user_name")}</div>,
     },
-    {
-      accessorKey: "user_address",
-      header: "User Address",
-      cell: ({ row }) => <div>{row.getValue("user_address")}</div>,
-    },
-    {
-      accessorKey: "user_phone",
-      header: "User Phone",
-      cell: ({ row }) => <div>{row.getValue("user_phone")}</div>,
-    },
+    // {
+    //   accessorKey: "user_address",
+    //   header: "User Address",
+    //   cell: ({ row }) => <div>{row.getValue("user_address")}</div>,
+    // },
+    // {
+    //   accessorKey: "user_phone",
+    //   header: "User Phone",
+    //   cell: ({ row }) => <div>{row.getValue("user_phone")}</div>,
+    // },
     {
       accessorKey: "created_at",
       header: "Created At",
+      cell: ({ row }) => <div>{row.getValue("created_at")}</div>,
+    },
+    {
+      accessorKey: "created_at",
+      header: "Status",
       cell: ({ row }) => <div>{row.getValue("created_at")}</div>,
     },
     {

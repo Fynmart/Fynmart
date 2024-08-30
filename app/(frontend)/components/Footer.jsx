@@ -18,6 +18,7 @@ const footerItems = [
       { title: "About Us", link: "/about-us" },
       { title: "Contact Us", link: "/contact-us" },
       { title: "Shipping Policy", link: "/shiping" },
+      { title: "Size charts", link: "/size-charts" },
     ],
   },
   {
