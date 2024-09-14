@@ -90,13 +90,13 @@ const Login = () => {
     }
   };
 
-  if (!loggedIn) {
-    return (
-      <div class="flex justify-center items-center h-screen w-screen fixed top-0 left-0 bg-white z-[9999]">
-        <Loader />
-      </div>
-    );
-  }
+  // if (!loggedIn) {
+  //   return (
+  //     <div class="flex justify-center items-center h-screen w-screen fixed top-0 left-0 bg-white z-[9999]">
+  //       <Loader />
+  //     </div>
+  //   );
+  // }
 
   const renderSidebar = () => (
     <div className="w-full md:w-1/3 bg-gray-100 p-4">

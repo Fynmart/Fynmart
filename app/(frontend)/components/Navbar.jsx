@@ -26,16 +26,6 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import UserLink from "./UserLink";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -104,10 +94,10 @@ const Navbar = () => {
 
           <div className="w-[65%] mx-4 hidden md:block">
             <div className="flex items-center relative">
-              <Input
+              <input
                 type="text"
                 placeholder="Search Product Here..."
-                className="w-full px-4 py-2 focus:outline-none rounded-l-lg bg-[#f0f5ff] text-black"
+                className="w-full px-4 py-2 focus:outline-none rounded-l-lg bg-[#f2b5db] text-black placeholder-black"
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={(e) => {
                   if (e.key === "Enter") {
@@ -119,7 +109,7 @@ const Navbar = () => {
               <button
                 onClick={handleSearch}
                 type="submit"
-                className="bg-[#bed7ff] rounded-r-lg text-white px-4 py-2 hover:bg-[#079281] focus:outline-none"
+                className="bg-[#ff0267da] rounded-r-lg text-white px-4 py-2 hover:bg-[#f1b6d4] focus:outline-none"
               >
                 <Search size={25} className="text-black" />
               </button>
